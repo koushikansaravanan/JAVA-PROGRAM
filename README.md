@@ -370,7 +370,34 @@ g.drawArc (25,345,100, 50, 25,75);
 }
 }
 
+**stack**
 
+import java.io.*;
+import java.util.*;
+public class stack
+{
+public static void main(String args[])
+{
+Stack<Integer>stack=new Stack<>();
+Scanner s=new Scanner(System.in);
+System.out.println("initial stack:"+stack);
+System.out.println("is stack empty:" +stack.isEmpty());
+ int item;
+System.out.print("\n enter the element to push:");
+item=s.nextInt();
+stack.push(item);
+System.out.print("\n enter the element to push:");
+item=s.nextInt();
+stack.push(item);
+System.out.print("\n enter the element to push:");
+item=s.nextInt();
+stack.push(item);
+System.out.print("\n stack after the push operation"+stack);
+System.out.print("\n element popped out:"+stack.pop());
+System.out.print("\n is stack empty:"+stack.isEmpty());
+System.out.print("\n top element :"+stack.peek());
+}
+}
 
 
 
