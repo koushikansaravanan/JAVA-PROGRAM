@@ -345,6 +345,31 @@ System.out.print("\n");
 }
 }
 
+**shape**
+
+import java.awt.*;
+import java.applet.*;
+public class shape extends Applet
+{
+public void paint (Graphics g)
+{
+g.drawLine(25,25,100, 25);
+g.drawRect(25,40,100,50);
+g.fillRect(145,40,100,50);
+g.drawRect(265,40,50,50);
+g.drawRoundRect(25, 125, 100, 50, 15, 15);
+g.setColor(Color.red);
+g.fillRoundRect(145,125,108,50,15,15);
+g.setColor(Color.blue);
+g.drawOval (25,205,108,50);
+g.setColor(Color.yellow);
+g.fillOval (145,205,100,50);
+g.setColor(Color.black);
+g.drawOval (265,205,50,50);
+g.drawArc (25,345,100, 50, 25,75);
+}
+}
+
 
 
 
