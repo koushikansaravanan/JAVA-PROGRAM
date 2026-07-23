@@ -82,5 +82,101 @@ System.out.print(""+arr[i]);
 }
 }
 
+**binary tree**
+class Node
+
+{ int data;
+ Node left, right;
+ Node(int d)
+
+{
+
+data=d;
+
+left=right=null;
+
+}
+
+}
+
+class BinaryTree
+
+{
+
+Node tree,root;
+
+public static void main(String args[])
+
+{
+
+BinaryTree tree=new BinaryTree();
+
+tree.root=new Node(1);
+
+tree.root.left=new Node(2);
+
+tree.root.right=new Node(3);
+
+tree.root.left.left=new Node(4);
+
+tree.root.left.right=new Node(5);
+
+tree.root=null;
+
+System.out.print("\n\ntree deleted!\n\n\n");
+
+}
+
+void deleteTree(Node node)
+
+{
+
+root=null;
+
+} void deleteTreeRef(Node nodeRef)
+
+{
+
+nodeRef=null; 
+}
+}
+
+**insectionsort**
+
+import java.util.*;
+class insertionsort
+{
+public static void main(String args[])
+{
+Scanner scan=new Scanner(System.in);
+System.out.print("\n\t\t INSERTION SORT");
+System.out.print("\n\n enter the size of array:");
+int n,element;
+n=scan.nextInt();
+int arr[]=new int[n];
+int j;
+System.out.print("enter the elements :");
+for(int i=0;i<n;i++)
+{
+arr[i]=scan.nextInt();
+}
+for(int i=0;i<n;i++)
+{
+element=arr[i];
+for(j=(i-1);j>=0 && (arr[j]>element);j--)
+{
+arr[j+1]=arr[j];
+
+arr[j+1]=element;
+}
+}
+System.out.print("the new sorted array is ");
+for(int i=0;i<n;i++)
+System.out.print(arr[i]+"");
+System.out.print("\n");
+}
+}
+
+
 
 
