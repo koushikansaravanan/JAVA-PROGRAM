@@ -244,6 +244,40 @@ s.close();
 }
 }
 
+**priorityqueue**
+
+import java.io.*;
+import java.util.*;
+public class priorityqueue
+{
+public static void main(String args[])
+{
+PriorityQueue<Integer> pq =new PriorityQueue<Integer>();
+Scanner s=new Scanner(System.in);
+int size,i,n;
+
+System.out.print("enter the size of priority queue:");
+size= s.nextInt();
+
+System.out.print("enter "+size+"elements:");
+for(i=0;i<size;i++)
+{
+n=s.nextInt();
+pq.add(n);
+}
+System.out.println("\n the element with top priority:"+pq.peek());
+System.out.println("\n the top element is romoved :"+pq.poll());
+System.out.println("\n the new top priority element:"+pq.peek());
+
+s.close();
+}
+}
+
+
+
+
+
+
 
 
 
