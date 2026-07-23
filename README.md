@@ -273,7 +273,32 @@ s.close();
 }
 }
 
+**queue**
 
+import java.io.*;
+import java.util.*;
+class queue
+{
+public static void main (String args[])
+{
+Queue<Integer>queue=new LinkedList<>();
+Scanner s=new Scanner (System.in);
+int[] arr=new int[30];
+System.out.print("\n enter the element limit to add in queue :");
+int n;
+n=s.nextInt();
+System.out.print("\n enter the elements :");
+for(int i=0;i<n;i++)
+{
+arr[i]=s.nextInt();
+queue.add(arr[i]);
+}
+System.out.print("\n the queue contents :"+queue);
+System.out.print("\n peek(): head of the queue:"+queue.peek());
+System.out.print("\n poll(): returnedhead of the queue:"+queue.poll());
+System.out.print("\n the queue contents :"+queue);
+}
+}
 
 
 
