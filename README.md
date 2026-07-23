@@ -177,6 +177,42 @@ System.out.print("\n");
 }
 }
 
+**linear search**
+import java.io.*;
+import java.util.Scanner;
+public class linear
+{
+public static void main (String args[])
+{
+Scanner s=new Scanner(System.in);
+int size,i,pos=0;
+System.out.print("Enter the limit of elements:");
+size=s.nextInt();
+int arr[]=new int [size];
+System.out.print("Enter the elements:");
+for(i=0;i<size;i++)
+arr[i]=s.nextInt();
+System.out.print("Enter the elements to search:");
+int num=s.nextInt();
+for(i=0;i<size;i++)
+{
+if(arr[i]==num)
+{
+pos=i+1;
+break;
+}
+}if(pos==0)
+{
+System.out.print("The elements not found:");
+}
+else
+{
+System.out.print("The elements found at position:"+pos);
+}
+}
+}
+
+
 
 
 
