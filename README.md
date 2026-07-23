@@ -212,6 +212,37 @@ System.out.print("The elements found at position:"+pos);
 }
 }
 
+**linkedlist**
+
+import java.io.*;
+import java.util.*;
+public class linkedlist
+{
+public static void main(String args[])
+{
+LinkedList<Integer>list=new LinkedList<Integer>();
+Scanner s=new Scanner(System.in);
+int size,i,n;
+System.out.print("enter the size of linkedlist:");
+size=s.nextInt();
+System.out.print("enter"+size+"elements:");
+for(i=0;i<size;i++)
+{
+n=s.nextInt();
+list.add(n);
+}
+System.out.print("\n the elements in the list:"+list);
+if(!list.isEmpty())
+{
+System.out.println("\n the elements in the 1st index (0-based):"+list.get(1));
+System.out.println("\n the first elements :"+list.getFirst());
+System.out.println("\n the last elements :"+list.getLast());
+}else{
+System.out.println("the list is empty.");
+}
+s.close();
+}
+}
 
 
 
