@@ -44,3 +44,43 @@ if(first>last)
 }
 }
 }
+
+**bubble search**
+
+import java.io.*;
+import java.util.*;
+public class bubble
+{
+public static void main (String args[])
+{
+Scanner s=new Scanner(System.in);
+int size,i,j;
+System.out.print("enter the limits :");
+size=s.nextInt();
+int arr[]=new int[size];
+System.out.print("enter"+size+"elements :");
+for(i=0;i<size;i++)
+{
+arr[i]=s.nextInt();
+}
+for(i=0;i<(size-1);i++)
+{
+for(j=0;j<(size-1);j++)
+{
+if(arr[j]>arr[j+1])
+{
+int x;
+x=arr[j];
+arr[j]=arr[j+1];
+arr[j+1]=x;
+}
+}
+}
+System.out.print("the new sorted array:");
+for(i=0;i<size;i++)
+System.out.print(""+arr[i]);
+}
+}
+
+
+
